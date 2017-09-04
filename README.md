@@ -18,7 +18,7 @@ The goal of this project is to automatically apply and update all of the various
 
 3.  Run the following to build the ISO (replacing ISO_FILENAME with the actual name of the file.)
 
-        git clone https://github.com/cawilliamson/ansible-gpdpocket.git
+        git clone https://github.com/lukehaas/ansible-gpdpocket.git
         cd ansible-gpdpocket
         sudo bash bootstrap-iso.sh ISO_FILENAME
 
@@ -34,7 +34,7 @@ The goal of this project is to automatically apply and update all of the various
 In order to install my Ansible playbooks on an existing install (e.g. one which you've set up with the `nomodeset fbcon=rotate:1` kernel parameters) please complete the following steps:
 
 1.  Start by downloading the latest ZIP of my ansible playbooks from:  
-    https://github.com/cawilliamson/ansible-gpdpocket/archive/master.zip
+    https://github.com/lukehaas/ansible-gpdpocket/archive/master.zip
 
 2.  Copy this file to a USB drive and insert that drive in to the GPD Pocket
 
@@ -57,18 +57,18 @@ In order to install my Ansible playbooks on an existing install (e.g. one which 
 ###### All
 
 - Distorted audio (kernel bug – https://bugzilla.kernel.org/show_bug.cgi?id=196351 )
-- Suspend Issues (Enhancement: [#34](https://github.com/cawilliamson/ansible-gpdpocket/issues/34))
+- Suspend Issues (Enhancement: [#34](https://github.com/lukehaas/ansible-gpdpocket/issues/34))
 - USB-C Data Connectivity (hansdegoede is working on this currently)
 
 ###### Debian
 
 - Neither netimage nor LiveDVD images can be used to run bootstrap-iso against due to differences in the on-disk file structure (and the fact that netimage installers have no files to patch!)
-- When installing you will be informed modules cannot be loaded. If you select "Yes" to continue anyway this will allow you to continue. (Enhancement: [#22](https://github.com/cawilliamson/ansible-gpdpocket/issues/22))
+- When installing you will be informed modules cannot be loaded. If you select "Yes" to continue anyway this will allow you to continue. (Enhancement: [#22](https://github.com/lukehaas/ansible-gpdpocket/issues/22))
 
 ###### Fedora
 
-- Currently the Fedora installer is broken - please do not attempt to use this until I have removed this note. (Bug: [#66](https://github.com/cawilliamson/ansible-gpdpocket/issues/66))
-- When installing Fedora you will need to select the option **without** the media checking functionality. Performing a media check will result in a checksum failure. (Enhancement: [#21](https://github.com/cawilliamson/ansible-gpdpocket/issues/21))
+- Currently the Fedora installer is broken - please do not attempt to use this until I have removed this note. (Bug: [#66](https://github.com/lukehaas/ansible-gpdpocket/issues/66))
+- When installing Fedora you will need to select the option **without** the media checking functionality. Performing a media check will result in a checksum failure. (Enhancement: [#21](https://github.com/lukehaas/ansible-gpdpocket/issues/21))
 
 ###### Solus
 

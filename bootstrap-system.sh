@@ -42,7 +42,7 @@ if grep -wq -- --nogit <<< "$@"; then
   echo "skip pulling source from git"
 else
   rm -rf /usr/src/ansible-gpdpocket
-  git clone --depth 1 https://github.com/cawilliamson/ansible-gpdpocket.git /usr/src/ansible-gpdpocket
+  git clone --depth 1 https://github.com/lukehaas/ansible-gpdpocket.git /usr/src/ansible-gpdpocket
 fi
 cd /usr/src/ansible-gpdpocket
 
